@@ -755,10 +755,75 @@ nav a:hover{
         border-top: 1px solid var(--border-color); 
     }
 
+    /* #home */
+    .home-text, .home-img{
+        grid-column: span 12;
+        /* text-align: center; */
+    }
+    .home-img{
+        order: -1; /* move the image to the top */
+        margin-bottom: 20px;
+    }
+
+    /* # about */
+    .about-img, .about-text{
+        grid-column: span 12;
+    }
+    .about-text{
+        /* text-align: center; */
+        order: -1; /* move the text to the top */
+    }
+    .about-img .box{
+        height: 115px;
+        width: 115px;
+    }
+
+    /* # services */
+    .service-item{
+        grid-column: span 6;
+    }
+
+    /* # pricing */
+    .pricing-header .price{
+        height: 120px;
+        width: 120px;
+    }
+
+    /* #contact */
+    .contact-info, .contact-form{
+        grid-column: span 12;
+    }
+    .contact-info{
+        margin-bottom: 30px;
+    }
+
 }
 
 @media(max-width: 575px){
-    
+    /* # grid */
+    .grid{
+        gap: 30px 15px;
+    }
+
+    /* # home */
+    .home-img img{
+        max-width: 200px;
+    }
+    .home-img .circle{
+        height: 250px;
+        width: 250px;
+    }
+
+    /* # pricing */
+    .pricing-item{
+        grid-column: span 12;
+    }
+
+    /* # team */
+    .team-item{
+        grid-column: span 12;
+    }
+
 }
 
 
