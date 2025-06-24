@@ -647,10 +647,37 @@ nav a:hover{
         height: 290px;
         width: 290px;
     }
+
+    /* # services */
+    .service-item .img-box{
+        height: 120px;
+        width: 120px;
+    }
+
+    /* # pricing */
+    .pricing-item{
+        grid-column: span 6;
+    }
+    .pricing-header .price{
+        height: 120px;
+        width: 120px;
+    }
+
+    /* # team */
+    .team-item {
+        grid-column: span 6;
+    }
+
 }
 
 @media(max-width: 767px){
-    
+    /* # variable */
+    :root{
+        --fs-4xl: 35px;
+        --fs-3xl: 26px;
+        --fs-2xl: 22px;
+        --fs-xl: 18px;
+    }
 }
 
 @media(max-width: 575px){
@@ -666,7 +693,7 @@ nav a:hover{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10000; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
