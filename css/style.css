@@ -624,7 +624,88 @@ nav a:hover{
 }
 
 /* # RESPONSIVE */
-/* # */
+@media(max-width: 1199px){
+    .about-img .box-1{
+        top: 100%;
+        left: 50%;
+    }
+}
+
+@media(max-width: 991px){
+    /* # variable */
+    :root{
+        --fs-4xl: 42px;
+        --fs-3xl: 32px;
+        --fs-2xl: 24px;
+    }
+
+    /* # home */
+    .home-img img{
+        max-width: 250px;
+    }
+    .home-img .circle{
+        height: 290px;
+        width: 290px;
+    }
+}
+
+@media(max-width: 767px){
+    
+}
+
+@media(max-width: 575px){
+    
+}
+
+
+/* 
+* =================================================================================================================
+# MODAL 
+* =================================================================================================================
+*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-grid{
+    /* background-color: red; */
+    max-width: 1000px;
+    margin: auto;
+}
+.modal-form{
+    grid-column: span 12;
+}
+.modal-content {
+  background-color: var(--bg-color);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+/* The Close Button */
+.close {
+  color: var(--main-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 

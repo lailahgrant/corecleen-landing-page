@@ -85,6 +85,7 @@ access]”) and should close when clicking outside or on a close icon.
 ### Features of the project
 - Responsiveness (display on `wide screens`, `tablet`, `phones`)
 - Colour `Swatch`: landing page can appear in any colour of the user's choice.
+- A pop up modal when the CTA button is clicked on the Home page
 
 
 ### Challenges
