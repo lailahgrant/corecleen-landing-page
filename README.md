@@ -74,6 +74,21 @@ access]”) and should close when clicking outside or on a close icon.
 - Include any images/assets inside a folder named /assets or /images.
 - Submit via GitHub or share a downloadable .zip folder.
 
+<hr style="border:5px solid red;">
+
+### Languages
+- HTML
+- CSS
+- Vanilla JavaScript
+- **NO frameworks**
+
+### Features of the project
+- Responsiveness (display on `wide screens`, `tablet`, `phones`)
+- Colour `Swatch`: landing page can appear in any colour of the user's choice.
+
+
+### Challenges
+- The `circles` end up as `ovals`.
 
 ### Finished website
 [Coreclean solutions LTD website](https://corecleen-landing-page.netlify.app/)
