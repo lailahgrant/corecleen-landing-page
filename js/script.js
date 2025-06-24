@@ -21,6 +21,36 @@ const headerBg = () => {
 headerBg();
 
 /**
+ * Navigation
+ */
+const navigation = () => {
+  const navToggler = document.querySelector(".js-nav-toggler");
+  const nav = document.querySelector(".js-nav");
+  const navItems = document.querySelectorAll("li");
+
+  const navToggle = () => {
+    /**
+     * add these ".open" and ".active" classes to the nav css
+     */
+    nav.classList.toggle("open");
+    navToggler.classList.toggle("active");
+  }
+
+  navToggler.addEventListener("click", navToggle);
+
+  navItems.forEach((li) => {
+    li.querySelector("a").addEventListener("click", () => {
+      if(window.innerWidth <= 767) {
+        navToggle();
+      }
+  });
+  });
+
+}
+navigation();
+
+
+/**
  * MODAL
  */
 // Get the modal

@@ -678,6 +678,83 @@ nav a:hover{
         --fs-2xl: 22px;
         --fs-xl: 18px;
     }
+
+    /* # header */
+    .nav-toggler{
+        display: block;
+        height: 34px;
+        width: 40px;
+        border: none;
+        z-index: 1;
+        background-color: transparent;
+    }
+    .nav-toggler span{
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: var(--main-color);
+        margin:auto;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+    /* Added from the js to toggle the hamburger menu icon */
+    .nav-toggler.active span{
+        background-color: transparent;
+    }
+    .nav-toggler span::after,
+    .nav-toggler span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--main-color);
+        transition: transform 0.3s ease;
+    }
+    .nav-toggler span::before{
+        transform: translateY(-7px);
+    }
+    /* nav toggle */
+    .nav-toggler.active span::before{
+        transform: rotate(45deg);
+    }
+    .nav-toggler span::after{
+        transform: translateY(7px);
+    }
+    /* nav toggle */
+    .nav-toggler.active span::after{
+        transform: rotate(-45deg);
+    }
+    .nav{
+        /* display: none;*/ /* hide the nav */
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 260px;
+        background-color: var(--bg-color);
+        padding: 60px 30px 30px;
+        overflow-y: auto;
+        transform: translateX(100%);   /* hide the nav */
+        transition: all 0.3s ease;
+    }
+    /* nav toggle */
+    .nav.open{
+        transform: translateX(0);
+        box-shadow: var(--shadow);
+    }
+    .nav li{
+        display: block;
+        margin: 0;
+    }
+    .nav a{
+        font-size: var(--fs-lg);
+    }
+    .nav li + li{
+        border-top: 1px solid var(--border-color); 
+    }
+
 }
 
 @media(max-width: 575px){
