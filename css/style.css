@@ -358,6 +358,33 @@ nav a:hover{
 
 
 /* # SERVICES */
+.service-item{
+    grid-column: span 3;
+    text-align: center;
+}
+.service-item .img-box{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    padding: 8px;
+}
+.service-item .img-box img{
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.service-item:hover .img-box img{
+    transform: scale(1.5);
+}
+.service-item h3{
+    text-transform: capitalize;
+    font-size: var(--fs-xl);
+    font-weight: 500;
+}
+
+
 /* # PRICING */
 /* # TEAM */
 /* # CONTACT */
